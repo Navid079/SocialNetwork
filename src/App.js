@@ -3,10 +3,12 @@ import React from 'react';
 import './App.css';
 import NewPost from './components/NewPost/NewPost';
 import Post from './components/Post/Post';
+import StoryBar from './components/StoryBar/StoryBar';
 
 function App() {
   return (
     <div className='App'>
+      <StoryBar />
       <NewPost avatar={require('./assets/pp4.jpg')} />
       <Post
         avatar={require('./assets/pp1.jpg')}
