@@ -1,4 +1,5 @@
 export default (state, { type, payload }) => {
+  let posts;
   switch (type) {
     case 'LOGIN':
       return {
@@ -17,7 +18,7 @@ export default (state, { type, payload }) => {
         isLoggedIn: false,
       };
     case 'ADD_POST':
-      const posts = state.posts.slice();
+      posts = state.posts.slice();
       posts.push(payload.post);
       return {
         ...state,
@@ -25,12 +26,12 @@ export default (state, { type, payload }) => {
       };
     case 'UPDATE_POST':
       const { id, ...post } = payload;
-      const { posts } = state;
+      posts = state.posts;
       const fetchedPost = posts.filter(post => post.id === id);
       fetchedPost = { ...fetchedPost, ...post };
       return state;
     case 'SET_POSTS':
-      const posts = payload.posts;
+      posts = payload.posts;
       return { ...state, posts };
     default:
       return state;
