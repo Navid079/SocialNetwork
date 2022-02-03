@@ -3,40 +3,47 @@ import IconButton from '../UI/IconButton';
 
 import './Post.css';
 
-const Post = () => {
+const Post = ({ avatar, username, location, image, text, likes, comments }) => {
+  let modifier;
+
+  if (image && text) {
+    modifier = '--both';
+  } else if (image) {
+    modifier = '--image';
+  } else if (text) {
+    modifier = '--text';
+  }
+
   return (
     <div className='post'>
       <div className='post__header'>
         <div className='post__profile'>
           <div className='post__avatar-container'>
-            <img
-              className='post__avatar'
-              src={require('../../assets/pp1.jpg')}
-              alt='avatar'
-            />
+            <img className='post__avatar' src={avatar} alt='avatar' />
           </div>
           <div className='post__title'>
-            <h2 className='post__user'>Vivi.Barc</h2>
-            <h4 className='post__location'>Vivian Brcenas</h4>
+            <h2 className='post__user'>{username}</h2>
+            <h4 className='post__location'>{location}</h4>
           </div>
         </div>
         <IconButton className='post__menu' icon='charm:menu-kebab' />
       </div>
       <div className='post__container'>
         <img
-          className='post__image'
-          src={require('../../assets/post.jpg')}
+          className={`post__image post__image${modifier}`}
+          src={image}
           alt='post'
         />
+        <p className={`post__text post__text${modifier}`}>{text}</p>
       </div>
       <div className='post__footer'>
         <div className='post__control'>
           <IconButton className='post__button' icon='icon-park-outline:like' />
-          <span className='post__stat'>12</span>
+          <span className='post__stat'>{likes}</span>
         </div>
         <div className='post__control'>
           <IconButton className='post__button' icon='uil:comment' />
-          <span className='post__stat'>3</span>
+          <span className='post__stat'>{comments}</span>
         </div>
         <div className='post__control'>
           <IconButton className='post__button' icon='akar-icons:send' />

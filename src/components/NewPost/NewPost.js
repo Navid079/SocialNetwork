@@ -4,14 +4,14 @@ import IconButton from '../UI/IconButton';
 
 import './NewPost.css';
 
-const NewPost = ({ onPost }) => {
+const NewPost = ({ avatar }) => {
   return (
     <div className='new-post'>
       <div className='new-post__body'>
         <div className='new-post__avatar-container'>
           <img
             className='new-post__avatar'
-            src={require('../../assets/pp4.jpg')}
+            src={avatar}
             alt='avatar'
           />
         </div>

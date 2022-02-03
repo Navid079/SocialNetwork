@@ -70,14 +70,33 @@
 
 .post__container {
   width: 100%;
-  height: 100%;
   border-radius: inherit;
 }
 
 .post__image {
   width: 100%;
-  height: 100%;
   border-radius: inherit;
+}
+
+.post__image--text {
+  display: none;
+}
+
+.post__text {
+  width: 100%;
+  padding: 6rem 1rem;
+}
+
+.post__text--both {
+  position: absolute;
+  bottom: 5rem;
+  padding: 1rem;
+  background-color: var(--clr-primary-alpha);
+  color: var(--clr-white);
+}
+
+.post__text--image {
+  display: none;
 }
 
 .post__footer {
