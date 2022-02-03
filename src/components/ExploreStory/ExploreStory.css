@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .explore-story__image {

@@ -2,9 +2,9 @@ import React from 'react';
 
 import './ExploreStory.css';
 
-const ExploreStory = () => {
+const ExploreStory = ({ className }) => {
   return (
-    <button className='explore-story'>
+    <button className={`explore-story ${className || ''}`}>
       <img
         className='explore-story__image'
         src={require('../../assets/post.jpg')}

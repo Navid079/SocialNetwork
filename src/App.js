@@ -11,10 +11,7 @@ function App() {
     <div className='App'>
       <Router>
         <Routes>
-          <Route exact path='/' element={<Wrapper />}>
-            <Route exact path='home' element={<Home />} />
-            <Route exact path='explore' element={<Explore />} />
-          </Route>
+          <Route exact path='/' element={<Home />} />
         </Routes>
       </Router>
     </div>
