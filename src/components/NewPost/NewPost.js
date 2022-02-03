@@ -11,6 +11,7 @@ const NewPost = ({ onPost }) => {
           <img
             className='new-post__avatar'
             src={require('../../assets/pp4.jpg')}
+            alt='avatar'
           />
         </div>
         <textarea

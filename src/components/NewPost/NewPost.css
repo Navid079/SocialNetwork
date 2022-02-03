@@ -2,7 +2,7 @@
   box-shadow: 0 2px 14px #00000025;
   width: 80%;
   margin: 0 auto;
-  border-radius: 2rem;
+  border-radius: var(--radius);
   background-color: var(--clr-white);
   display: flex;
   flex-direction: column;
@@ -22,6 +22,7 @@
   flex-grow: 0;
   flex-shrink: 0;
   margin: 0 1rem 0 0;
+  box-shadow: 0 2px 7px #00000025;
 }
 
 .new-post__avatar {
