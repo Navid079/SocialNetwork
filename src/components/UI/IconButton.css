@@ -4,9 +4,6 @@
   height: 2rem;
   cursor: pointer;
   margin: 0 0.25rem;
-}
-
-.icon-button__icon {
   font-size: 1.75rem;
   color: var(--clr-primary);
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import IconButton from '../UI/IconButton';
 
 import './Post.css';
 
@@ -19,6 +20,7 @@ const Post = () => {
             <h4 className='post__location'>Vivian Brcenas</h4>
           </div>
         </div>
+        <IconButton className='post__menu' icon='charm:menu-kebab' />
       </div>
       <div className='post__container'>
         <img
@@ -27,7 +29,19 @@ const Post = () => {
           alt='post'
         />
       </div>
-      <div className='post__footer'></div>
+      <div className='post__footer'>
+        <div className='post__control'>
+          <IconButton className='post__button' icon='icon-park-outline:like' />
+          <span className='post__stat'>12</span>
+        </div>
+        <div className='post__control'>
+          <IconButton className='post__button' icon='uil:comment' />
+          <span className='post__stat'>3</span>
+        </div>
+        <div className='post__control'>
+          <IconButton className='post__button' icon='akar-icons:send' />
+        </div>
+      </div>
     </div>
   );
 };
