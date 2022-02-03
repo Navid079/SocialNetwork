@@ -1,12 +1,12 @@
 import React from 'react';
-import SearchBar from '../../components/SearchBar/SearchBar';
+import ExploreBar from '../../components/ExploreBar/ExploreBar';
 
 import './Explore.css';
 
 const Explore = () => {
   return (
     <div>
-      <SearchBar />
+      <ExploreBar />
     </div>
   );
 };

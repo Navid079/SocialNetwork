@@ -1,0 +1,28 @@
+.explore-nav {
+  background-color: var(--clr-white);
+  border-radius: 0 0 2rem 2rem;
+  box-shadow: 0 4px 14px #00000025;
+}
+
+.explore-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0.1.25rem;
+}
+
+.explore-navbar::after {
+  content: '';
+  width: 3rem;
+}
+
+.explore-navbar .explore-navbar__back {
+  width: 3rem;
+  height: 3rem;
+  font-size: 3rem;
+}
+
+.explore-navbar__title {
+  font-size: 2rem;
+  color: var(--clr-primary);
+}

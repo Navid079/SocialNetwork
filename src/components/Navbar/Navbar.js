@@ -7,8 +7,8 @@ import './Navbar.css';
 
 const Navbar = ({ className }) => {
   return (
-    <div className={`nav ${className || ''}`}>
-      <nav className='navbar'>
+    <nav className={`nav ${className || ''}`}>
+      <div className='navbar'>
         <div className='navbar__logo-container'>
           <svg
             className='navbar__logo'
@@ -39,7 +39,7 @@ const Navbar = ({ className }) => {
           <IconButton icon='ri:notification-4-line' />
           <IconButton icon='ant-design:message-outlined' />
         </div>
-      </nav>
+      </div>
       <StoryBar>
         <Story avatar={require('../../assets/pp1.jpg')} username='user.1' />
         <Story avatar={require('../../assets/pp2.jpg')} username='user.2' />
@@ -47,7 +47,7 @@ const Navbar = ({ className }) => {
         <Story avatar={require('../../assets/pp4.jpg')} username='user.4' />
         <Story avatar={require('../../assets/pp1.jpg')} username='user.5' />
       </StoryBar>
-    </div>
+    </nav>
   );
 };
 
