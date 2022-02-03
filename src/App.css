@@ -3,3 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --clr-primary: #848484;
+  --clr-secondary: #c0c0c0;
+
+  --clr-white: white;
+  --clr-black: black;
+}
