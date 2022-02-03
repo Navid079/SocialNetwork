@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import IconButton from '../UI/IconButton';
 import SvgButton from '../UI/SvgButton';
 
@@ -7,8 +8,12 @@ import './Footer.css';
 const Footer = ({ className }) => {
   return (
     <footer className={`footer ${className || ''}`}>
-      <IconButton icon='fluent:home-12-filled' />
-      <IconButton icon='bi:send' />
+      <Link to='/home'>
+        <IconButton icon='fluent:home-12-filled' />
+      </Link>
+      <Link to='/explore'>
+        <IconButton icon='bi:send' />
+      </Link>
       <SvgButton>
         <svg
           width='100%'
