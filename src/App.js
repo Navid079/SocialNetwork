@@ -1,16 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Wrapper from './pages/Wrapper/Wrapper';
+import { UserContextProvider } from './logic/context/UserContext';
 import Home from './pages/Home/Home';
-import Explore from './pages/Explore/Explore';
-
-import './App.css';
 import Login from './pages/Login/Login';
 import Signup from './pages/Singup/Signup';
 
+import './App.css';
+
 function App() {
   return (
-    <div className='App'>
+    <UserContextProvider>
       <Router>
         <Routes>
           <Route exact path='/login' element={<Login />} />
@@ -18,7 +17,7 @@ function App() {
           <Route exact path='/' element={<Home />} />
         </Routes>
       </Router>
-    </div>
+    </UserContextProvider>
   );
 }
 

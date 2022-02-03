@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import Post from '../../components/Post/Post';
 import NewPost from '../../components/NewPost/NewPost';
 import Navbar from '../../components/Navbar/Navbar';
 
 import './Home.css';
+import UserContext from '../../logic/context/UserContext';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const { isLoggedIn } = useContext(UserContext);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!isLoggedIn) {
+      navigate('/login');
+    }
+  });
+
   return (
     <div className='home-page'>
       <Navbar className='home-page__item home-page__nav' />
