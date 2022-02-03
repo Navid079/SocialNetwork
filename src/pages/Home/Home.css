@@ -6,3 +6,9 @@
 .home-page .home-page__item {
   margin-bottom: 4rem;
 }
+
+.home-page__nav {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+}

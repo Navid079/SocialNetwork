@@ -1,12 +1,14 @@
 import React from 'react';
-import NewPost from '../../components/NewPost/NewPost';
 import Post from '../../components/Post/Post';
+import NewPost from '../../components/NewPost/NewPost';
+import Navbar from '../../components/Navbar/Navbar';
 
-import './Home.css'
+import './Home.css';
 
 const Home = () => {
   return (
     <div className='home-page'>
+      <Navbar className='home-page__item home-page__nav' />
       <NewPost
         className='home-page__item'
         avatar={require('../../assets/pp4.jpg')}
