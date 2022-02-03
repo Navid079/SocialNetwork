@@ -4,9 +4,9 @@ import IconButton from '../UI/IconButton';
 
 import './NewPost.css';
 
-const NewPost = ({ avatar }) => {
+const NewPost = ({ className, avatar }) => {
   return (
-    <div className='new-post'>
+    <div className={`new-post ${className || ''}`}>
       <div className='new-post__body'>
         <div className='new-post__avatar-container'>
           <img

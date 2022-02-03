@@ -1,0 +1,14 @@
+.wrapper__nav,
+.wrapper__footer {
+  position: sticky;
+  z-index: 2;
+}
+
+.wrapper__nav {
+  margin-bottom: 4rem;
+  top: 0;
+}
+
+.wrapper__footer {
+  bottom: 0;
+}

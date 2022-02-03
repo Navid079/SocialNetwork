@@ -4,6 +4,7 @@
   width: 100%;
   overflow-x: scroll;
   border-radius: inherit;
+  background-color: var(--clr-white);
 }
 
 .story-bar::-webkit-scrollbar {

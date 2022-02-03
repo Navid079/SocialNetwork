@@ -6,4 +6,5 @@
   align-items: center;
   border-radius: 2rem 2rem 0 0;
   box-shadow: 0 -4px 14px #00000025;
+  background-color: var(--clr-white);
 }

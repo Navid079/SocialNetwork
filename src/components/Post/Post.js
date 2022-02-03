@@ -3,7 +3,7 @@ import IconButton from '../UI/IconButton';
 
 import './Post.css';
 
-const Post = ({ avatar, username, location, image, text, likes, comments }) => {
+const Post = ({ className, avatar, username, location, image, text, likes, comments }) => {
   let modifier;
 
   if (image && text) {
@@ -15,7 +15,7 @@ const Post = ({ avatar, username, location, image, text, likes, comments }) => {
   }
 
   return (
-    <div className='post'>
+    <div className={`post ${className || ''}`}>
       <div className='post__header'>
         <div className='post__profile'>
           <div className='post__avatar-container'>

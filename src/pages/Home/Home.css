@@ -1,0 +1,8 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-page .home-page__item {
+  margin-bottom: 4rem;
+}

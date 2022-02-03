@@ -4,9 +4,9 @@ import SvgButton from '../UI/SvgButton';
 
 import './Footer.css';
 
-const Footer = () => {
+const Footer = ({ className }) => {
   return (
-    <footer className='footer'>
+    <footer className={`footer ${className || ''}`}>
       <IconButton icon='fluent:home-12-filled' />
       <IconButton icon='bi:send' />
       <SvgButton>

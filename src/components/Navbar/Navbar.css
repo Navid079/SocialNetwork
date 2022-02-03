@@ -2,6 +2,7 @@
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
   box-shadow: 0 4px 14px #00000025;
+  background-color: var(--clr-white);
 }
 
 .navbar {
@@ -11,7 +12,6 @@
   padding: 0 1rem;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--clr-white);
 }
 
 .navbar__logo-container {

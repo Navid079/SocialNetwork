@@ -5,9 +5,9 @@ import Story from '../StoryBar/Story';
 
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ className }) => {
   return (
-    <div className='nav'>
+    <div className={`nav ${className || ''}`}>
       <nav className='navbar'>
         <div className='navbar__logo-container'>
           <svg
