@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
 import NewPost from './components/NewPost/NewPost';
 import Post from './components/Post/Post';
 import Story from './components/StoryBar/Story';
@@ -9,6 +10,7 @@ import StoryBar from './components/StoryBar/StoryBar';
 function App() {
   return (
     <div className='App'>
+      <Navbar />
       <StoryBar>
         <Story avatar={require('./assets/pp1.jpg')} username='user.1' />
         <Story avatar={require('./assets/pp2.jpg')} username='user.2' />
