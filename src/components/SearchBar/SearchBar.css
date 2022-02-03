@@ -1,0 +1,30 @@
+.search-bar {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-white);
+  border-radius: inherit;
+}
+
+.search-bar__search {
+  width: 80%;
+  display: flex;
+  padding: 0.75rem 1.25rem;
+  border-radius: 2rem;
+  box-shadow: 0 4px 14px #00000025;
+}
+
+.search-bar__icon {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  color: var(--clr-primary);
+}
+
+.search-bar__input {
+  all: unset;
+  flex-grow: 1;
+}
