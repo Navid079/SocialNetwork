@@ -1,0 +1,9 @@
+.svg-button {
+  all: unset;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  margin: 0 0.25rem;
+  font-size: 1.75rem;
+  color: var(--clr-primary);
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './App.css';
+import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
 import NewPost from './components/NewPost/NewPost';
 import Post from './components/Post/Post';
@@ -37,6 +38,7 @@ function App() {
         likes='103'
         comments='59'
       />
+      <Footer />
     </div>
   );
 }
