@@ -4,6 +4,7 @@ import UserReducer from '../reducer/UserReducer';
 const INITIAL = {
   username: '',
   email: '',
+  jwt: '',
   avatar: require('../../assets/pp4.jpg'),
   posts: [],
   isLoggedIn: false,
