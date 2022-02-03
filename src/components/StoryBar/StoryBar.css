@@ -3,9 +3,7 @@
   padding: 1rem;
   width: 100%;
   overflow-x: scroll;
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-  box-shadow: 0 4px 14px #00000025;
+  border-radius: inherit;
 }
 
 .story-bar::-webkit-scrollbar {

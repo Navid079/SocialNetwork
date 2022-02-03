@@ -11,13 +11,6 @@ function App() {
   return (
     <div className='App'>
       <Navbar />
-      <StoryBar>
-        <Story avatar={require('./assets/pp1.jpg')} username='user.1' />
-        <Story avatar={require('./assets/pp2.jpg')} username='user.2' />
-        <Story avatar={require('./assets/pp3.jpg')} username='user.3' />
-        <Story avatar={require('./assets/pp4.jpg')} username='user.4' />
-        <Story avatar={require('./assets/pp1.jpg')} username='user.5' />
-      </StoryBar>
       <NewPost avatar={require('./assets/pp4.jpg')} />
       <Post
         avatar={require('./assets/pp1.jpg')}
