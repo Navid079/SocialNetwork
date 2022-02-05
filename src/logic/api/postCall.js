@@ -1,8 +1,10 @@
 import axios from 'axios';
 
+const api = process.env.REACT_APP_API_URL;
+
 export const newPost = async (username, text, image, jwt, dispatch) => {
   try {
-    const res = await axios.put('url', {
+    const res = await axios.put(`${api}/new-post`, {
       username,
       text,
       image,
@@ -25,7 +27,7 @@ export const newPost = async (username, text, image, jwt, dispatch) => {
 
 export const likePost = async (postId, dispatch) => {
   try {
-    const res = axios.patch('url', {
+    const res = axios.patch(`${api}/like-post`, {
       id: postId,
     });
     const { newLikesCount } = res.body;
@@ -38,7 +40,7 @@ export const likePost = async (postId, dispatch) => {
 
 export const fetchPosts = async dispatch => {
   try {
-    const res = await axios.get('url');
+    const res = await axios.get(`${api}/posts`);
     const { posts } = res.body;
     dispatch({ type: 'SET_POSTS', payload: { posts } });
   } catch {}

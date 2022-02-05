@@ -1,8 +1,10 @@
 import axios from 'axios';
 
+const api = process.env.REACT_APP_API_URL;
+
 export const loginCall = async (username, password, dispatch) => {
   try {
-    const res = await axios.post('url', {
+    const res = await axios.post(`${api}/login`, {
       username,
       password,
     });
@@ -14,9 +16,9 @@ export const loginCall = async (username, password, dispatch) => {
   }
 };
 
-export const loginCall = async (username, password, email, dispatch) => {
+export const signupCall = async (username, password, email, dispatch) => {
   try {
-    const res = await axios.post('url', {
+    const res = await axios.post(`${api}/signup`, {
       username,
       password,
       email,
