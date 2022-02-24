@@ -7,7 +7,6 @@ export const newPost = async (username, text, image, jwt, dispatch) => {
     const res = await axios.put(`${api}/new-post`, {
       username,
       text,
-      image,
       jwt,
     });
     const { postId } = res.body;
@@ -25,10 +24,11 @@ export const newPost = async (username, text, image, jwt, dispatch) => {
   }
 };
 
-export const likePost = async (postId, dispatch) => {
+export const likePost = async (postId, jwt, dispatch) => {
   try {
     const res = axios.patch(`${api}/like-post`, {
       id: postId,
+      jwt,
     });
     const { newLikesCount } = res.body;
     dispatch({ type: 'UPDATE_POST', payload: { id, likes: newLikesCount } });
