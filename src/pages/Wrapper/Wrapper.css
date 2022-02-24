@@ -1,3 +1,7 @@
+.wrapper {
+  margin-bottom: 5rem;
+}
+
 .wrapper__footer {
   position: fixed;
   z-index: 2;
