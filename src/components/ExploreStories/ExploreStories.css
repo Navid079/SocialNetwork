@@ -1,0 +1,17 @@
+.explore-stories {
+  padding: 2rem;
+}
+
+.explore-stories__heading {
+  color: var(--clr-primary);
+  margin-bottom: 2rem;
+}
+
+.explore-stories__body {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.explore-stories__body > * {
+  flex-shrink: 0 !important;
+}

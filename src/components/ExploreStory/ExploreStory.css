@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
+  margin-right: 3rem;
 }
 
 .explore-story__image {
@@ -25,7 +26,7 @@
   height: 100%;
   z-index: 2;
   left: 50%;
-  background-color: var(--clr-black);
+  background-color: var(--clr-white);
 }
 
 .explore-story__gradient {
@@ -40,7 +41,7 @@
 .explore-story__avatar {
   width: 3rem;
   height: 3rem;
-  border: 1px solid var(--clr-black);
+  border: 1px solid var(--clr-white);
   border-radius: 3rem;
   position: relative;
   z-index: 2;
