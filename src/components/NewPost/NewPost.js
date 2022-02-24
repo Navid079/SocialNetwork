@@ -24,9 +24,6 @@ const NewPost = ({ className, avatar }) => {
       <div className='new-post__controls'>
         <div className='new-post__media'>
           <IconButton icon='ic:round-photo-filter' />
-          <IconButton icon='akar-icons:video' />
-          <IconButton icon='ic:outline-place' />
-          <IconButton icon='fluent:emoji-24-regular' />
         </div>
         <Button>Post</Button>
       </div>

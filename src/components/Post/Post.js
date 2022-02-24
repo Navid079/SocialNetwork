@@ -3,7 +3,16 @@ import IconButton from '../UI/IconButton';
 
 import './Post.css';
 
-const Post = ({ className, avatar, username, location, image, text, likes, comments }) => {
+const Post = ({
+  className,
+  avatar,
+  username,
+  location,
+  image,
+  text,
+  likes,
+  comments,
+}) => {
   let modifier;
 
   if (image && text) {
@@ -40,13 +49,6 @@ const Post = ({ className, avatar, username, location, image, text, likes, comme
         <div className='post__control'>
           <IconButton className='post__button' icon='icon-park-outline:like' />
           <span className='post__stat'>{likes}</span>
-        </div>
-        <div className='post__control'>
-          <IconButton className='post__button' icon='uil:comment' />
-          <span className='post__stat'>{comments}</span>
-        </div>
-        <div className='post__control'>
-          <IconButton className='post__button' icon='akar-icons:send' />
         </div>
       </div>
     </div>

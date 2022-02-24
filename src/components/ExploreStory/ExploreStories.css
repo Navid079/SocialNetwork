@@ -1,0 +1,24 @@
+.explore-stories__title {
+  color: var(--clr-primary);
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.explore-stories__body {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.explore-stories__body .explore-stories__story {
+  flex-shrink: 0;
+  margin: 0 2rem;
+}
+
+.explore-stories__body::-webkit-scrollbar {
+  display: none;
+}
+
+.explore-stories__body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

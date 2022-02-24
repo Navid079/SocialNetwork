@@ -35,10 +35,6 @@ const Navbar = ({ className }) => {
             </defs>
           </svg>
         </div>
-        <div className='navbar__controls'>
-          <IconButton icon='ri:notification-4-line' />
-          <IconButton icon='ant-design:message-outlined' />
-        </div>
       </div>
       <StoryBar>
         <Story avatar={require('../../assets/pp1.jpg')} username='user.1' />
